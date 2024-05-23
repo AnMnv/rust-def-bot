@@ -1,0 +1,15 @@
+[package]
+name = "rus_def_bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+teloxide = { version = "0.12", features = ["macros"] }
+log = "0.4"
+pretty_env_logger = "0.4"
+tokio = { version =  "1.8", features = ["rt-multi-thread", "macros"] }
+regex = "1.7"  # Ensure this line is included
+chrono = "0.4"
+
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
